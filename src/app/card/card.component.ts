@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -7,5 +7,16 @@ import { Component } from '@angular/core';
 })
 export class CardComponent {
   public Titulo:string = "Curso de Guitarra";
-  public image:string = "https://img.freepik.com/vector-gratis/plantilla-banner-horizontal-clases-guitarra_23-2149351508.jpg";
+  public image?:string;
+
+  @Input() dataEntrante:any;
+
+  constructor(){}
+
+  ngOnInit(): void {
+    this.image = "https://img.freepik.com/vector-gratis/plantilla-banner-horizontal-clases-guitarra_23-2149351508.jpg";
+  }
+
 }
+
+

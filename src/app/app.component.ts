@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 interface Targeta{
   titulo:string;
   subtitulo:string;
-  nro?:number;
+  image:string;
 }
 
 @Component({
@@ -18,10 +18,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     
     this.ArregloTargetas = [
-      {titulo: 'Video 1', subtitulo :'Subtitulo Video 1'},
-      {titulo: 'Video 2', subtitulo :'Subtitulo Video 2'},
-      {titulo: 'Video 3', subtitulo :'Subtitulo Video 3'},
-      {titulo: 'Video 4', subtitulo :'Subtitulo Video 4'},
+      {titulo: 'Video 1', subtitulo :'Subtitulo Video 1', image:"https://www.superprof.co/blog/wp-content/uploads/2020/03/historia-bajo-instrumento-1060x707.jpg"},
+      {titulo: 'Video 2', subtitulo :'Subtitulo Video 2', image:"https://i.ytimg.com/vi/tizeqcKwum4/maxresdefault.jpg"},
+      {titulo: 'Video 3', subtitulo :'Subtitulo Video 3', image:"https://musicopolix.com/blog/wp-content/uploads/2021/12/cuales-son-las-mejores-marcas-de-baterias-acusticas-portada.jpg"}    
     ]
 
   }
